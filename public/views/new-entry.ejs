@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+<div class="col-md-4 offset-md-4">
+ <h2 class="text-center">Sign it now!</h2>
+
+    <form method="post">
+        <div class="form-group my-2">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Mohammed" required>
+        </div>
+        <div class="form-group my-2">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"  class="form-control" placeholder="ejemplo@correo.com">
+        </div>
+        <div class="form-group my-2">
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website"  class="form-control" placeholder="https://mywebsite.com">
+        </div>
+       <div class="form-group my-2">
+           <label for="comments">Comments:</label><br>
+           <textarea id="comments" name="comments" rows="6" cols="60"  class="form-control" placeholder="Go into a room to decide you didn't want to be in there anyway be superior. Run outside as soon as door open what a cat-ass-trophy!" required></textarea>
+        </div>
+        <div class="form-group my-2">
+            <input type="submit" value="Post Entry" class="btn btn-primary">
+            <input type="reset" value="Reset"  class="btn btn-secondary">
+        </div>
+      </form>
+</div>
+   
+
+    <%- include('partials/footer') %>
